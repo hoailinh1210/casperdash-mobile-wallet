@@ -56,7 +56,7 @@ workflows:
       - checkout_code
       - rn/android_build:
             name: build_android_debug
-            project_path: "casperdash-mobile-wallet"
+            project_path: "android"
             build_type: debug
             build_image_version: '9'
             requires:
