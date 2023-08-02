@@ -58,6 +58,6 @@ workflows:
             name: build_android_debug
             project_path: "android"
             build_type: debug
-            build_image_version: '9'
+            build_image_version: '7'
             requires:
               - checkout_code
