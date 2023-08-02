@@ -58,5 +58,6 @@ workflows:
             name: build_android_debug
             project_path: "casperdash-mobile-wallet"
             build_type: debug
+            node_version: '16'
             requires:
               - checkout_code
