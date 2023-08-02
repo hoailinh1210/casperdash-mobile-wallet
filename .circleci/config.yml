@@ -8,6 +8,7 @@ version: 2.1
 # See: https://circleci.com/docs/orb-intro/
 orbs:
   android: circleci/android@2.3.0
+  react-native: react-native-community/react-native@7.1.1
 
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/configuration-reference/#jobs
@@ -45,3 +46,5 @@ workflows:
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - build-and-test
+      - rn/android_build:
+          build_type: release
