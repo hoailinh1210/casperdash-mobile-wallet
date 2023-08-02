@@ -25,6 +25,10 @@ jobs:
       # Checkout the code as the first step.
       - checkout
 
+      - run:
+          name: Yarn install
+          command: |
+            yarn
       # And finally run the release build
       - run:
           name: Assemble release build
